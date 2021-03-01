@@ -1,0 +1,19 @@
+-- 027) 개월 수 더한 날짜 출력하기 (ADD_MONTHS)
+SELECT ADD_MONTHS(TO_DATE('2021-02-01', 'RRRR-MM-DD'), 100)
+  FROM DUAL;
+  
+-- 100일 후 날짜 구하기
+SELECT TO_DATE('2021-02-01', 'RRRR-MM-DD') + 100
+  FROM DUAL;
+  
+SELECT TO_DATE('2021-02-01', 'RRRR-MM-DD') + interval '100' month
+  FROM DUAL;
+  
+SELECT TO_DATE('2021-02-01', 'RRRR-MM-DD') + interval '1-3' year(1) to month
+  FROM DUAL;
+  
+SELECT TO_DATE('2021-02-01', 'RRRR-MM-DD') + interval '3' year
+  FROM DUAL;
+  
+SELECT TO_DATE('2021-02-01', 'RRRR-MM-DD') + TO_YMINTERVAL('03-05') as 날짜
+  FROM DUAL;
