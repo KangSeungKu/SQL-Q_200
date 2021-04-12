@@ -1,0 +1,3 @@
+-- 080) 데이터 삭제하기 (DELETE, TRUNCATE, DROP)
+DELETE FROM emp
+WHERE ename = 'SCOTT';
