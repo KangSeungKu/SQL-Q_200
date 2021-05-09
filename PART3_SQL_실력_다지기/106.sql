@@ -1,0 +1,11 @@
+-- 106) 데이터의 품질 높이기 (3) (NOT NULL)
+CREATE TABLE DEPT5
+(DEPTNO     NUMBER(10),
+ DNAME      VARCHAR2(14),
+ LOC        VARCHAR2(10)    CONSTRAINT  DEPTS_LOC_NN    NOT NULL);
+ 
+-- 제약조건 생성
+ALTER TABLE DEPT5
+    MODIFY LOC CONSTRAINT DEPT5_LOC_NN NOT NULL;
+-- 단, 기존 데이터들 중 NULL값이 존재해서는 안됨.
+-- 다른 제약조건들과 달리 ADD가 아닌 MODIFY를 사용
