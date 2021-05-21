@@ -6,3 +6,4 @@ SELECT LPAD('★', NUM, '★') as STAR
   FROM LOOP_TABLE;
   
 -- LPAD([원본데이터], [전체사이즈], [채울문자])
+-- WITH를 for문 대용으로 사용
